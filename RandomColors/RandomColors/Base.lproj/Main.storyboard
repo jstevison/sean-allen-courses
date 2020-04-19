@@ -15,18 +15,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcv-bZ-elN">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3b9-8V-Aws">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="2l3-iN-fR6">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2l3-iN-fR6" id="ZJD-gr-AJe">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <action selector="tempButtonTapped:" destination="aJV-CW-z4T" eventType="touchUpInside" id="EM2-O5-zOu"/>
+                                    <outlet property="dataSource" destination="aJV-CW-z4T" id="B1c-Xu-iOf"/>
+                                    <outlet property="delegate" destination="aJV-CW-z4T" id="QYv-3S-C8F"/>
                                 </connections>
-                            </button>
+                            </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="zcv-bZ-elN" firstAttribute="centerY" secondItem="HIF-nJ-Jgc" secondAttribute="centerY" id="ZjQ-Ve-J3x"/>
-                            <constraint firstItem="zcv-bZ-elN" firstAttribute="centerX" secondItem="HIF-nJ-Jgc" secondAttribute="centerX" id="lkI-nB-CIm"/>
+                            <constraint firstItem="3b9-8V-Aws" firstAttribute="leading" secondItem="HIF-nJ-Jgc" secondAttribute="leading" id="Bdo-q5-TrT"/>
+                            <constraint firstAttribute="trailing" secondItem="3b9-8V-Aws" secondAttribute="trailing" id="UeV-Eu-5sz"/>
+                            <constraint firstAttribute="bottom" secondItem="3b9-8V-Aws" secondAttribute="bottom" id="bim-hq-Hb5"/>
+                            <constraint firstItem="3b9-8V-Aws" firstAttribute="top" secondItem="HIF-nJ-Jgc" secondAttribute="top" id="fgy-sB-k4a"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GpO-97-ezL"/>
                     </view>
