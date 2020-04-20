@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD14FFA0244DECCD0071E614 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD14FF9F244DECCD0071E614 /* UIColor+Ext.swift */; };
 		BDD07327244D0123001C3FCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD07326244D0123001C3FCD /* AppDelegate.swift */; };
 		BDD07329244D0123001C3FCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD07328244D0123001C3FCD /* SceneDelegate.swift */; };
 		BDD0732E244D0123001C3FCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD0732C244D0123001C3FCD /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD14FF9F244DECCD0071E614 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		BDD07323244D0123001C3FCD /* RandomColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD07326244D0123001C3FCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDD07328244D0123001C3FCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				BDD0732F244D0123001C3FCD /* Assets.xcassets */,
 				BDD07331244D0123001C3FCD /* LaunchScreen.storyboard */,
 				BDD07334244D0123001C3FCD /* Info.plist */,
+				BD14FF9F244DECCD0071E614 /* UIColor+Ext.swift */,
 			);
 			path = RandomColors;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				BDD0733B244D023C001C3FCD /* ColorsTableVC.swift in Sources */,
 				BDD0733D244D0387001C3FCD /* ColorsDetailVC.swift in Sources */,
+				BD14FFA0244DECCD0071E614 /* UIColor+Ext.swift in Sources */,
 				BDD07327244D0123001C3FCD /* AppDelegate.swift in Sources */,
 				BDD07329244D0123001C3FCD /* SceneDelegate.swift in Sources */,
 			);
